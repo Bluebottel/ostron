@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+    <title>Ostronsällskapet</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: 'Lora', sans-serif;
+        font-style: italic;
+        font-size: 1.05rem;
+      }
+      
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        color: #383838;
+        flex-direction: column;
+        background-size: cover;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("background_oysters.avif");
+      }
+
+      #hero-text {
+        max-width: 90%;
+      }
+
+      .hero {
+        display: flex;
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: min(5rem, 15vw);
+        justify-content: center;
+        background-color: #f5efba;
+      }
+
+      #wave {
+        display: block;
+        width: 100%;
+        height: 100px;
+      }
+
+      h2 {
+        margin: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: clamp(1.2rem, 4vw, 2rem);
+      }
+
+      .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .textbox {
+        background: white;
+        padding: 1.5rem;
+        max-width: clamp(20rem, 70rem, 92vw);
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transform: translateY(-10%);
+      }
+
+      .textbox > p:last-child {
+        margin-bottom: 0.2rem;
+      }
+
+      ul {
+        padding-left: 2rem;
+        margin: 0;
+      }
+
+      h3 {
+        padding: 0;
+        margin-bottom: 1rem;
+      }
+
+      @media (max-width: 1080px) {
+        body {
+          background-size: 400%;
+          background-position: center -8%;
+        }
+
+        ul {
+          padding-left: 1.5rem;
+        }
+
+        .textbox {
+          padding: 1rem;
+        }
+
+        * {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-height: 400px) {
+        .hero {
+          display: none;
+        }
+
+        .content {
+          display: block;
+        }
+
+        .textbox {
+          width: 100%;
+          max-width: 100%;
+          height: 100%;
+          border: none;
+          transform: unset;
+          border-radius: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 2rem;
+          background: linear-gradient(152deg,rgba(245, 239, 186, 1) 0%, rgba(255, 255, 255, 1) 23%);
+        }
+
+        br {
+          display: none;
+        }
+
+        #wave {
+          visibility: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <img id="hero-text" src="handwriting.svg" alt="Ostronsällskapet i Hemingways handstil">
+    </div>
+    <svg viewBox="0 0 500 100" preserveAspectRatio="none" id="wave" aria-hidden="true">
+      <path fill="#f5efba" d="M0,30 C150,80 350,-10 500,30 L500,00 L0,0 Z" />
+    </svg>
+    <main class="content">
+      <section class="textbox">
+        <h2>Välkommen till Ostronsällskapet</h2>
+        <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
+
+        <h3>Så här gör du</h3>
+        <ul>
+          <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
+              meddelande (ersätt <strong>@</strong> med <strong>-</strong>).</li>
+          <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
+              meddelande.</li>
+        </ul>
+
+        <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
+    </main>
+  </body>
+
+</html>
