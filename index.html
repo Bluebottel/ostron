@@ -8,16 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=s" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap" rel="stylesheet">
 
     <title>Ostronsällskapet</title>
     <style>
       * {
         box-sizing: border-box;
+      }
+
+      /*:root {
         font-family: 'Lora', sans-serif;
         font-style: italic;
         font-size: 1.05rem;
-      }
-      
+      }*/
+
       html,
       body {
         margin: 0;
@@ -73,10 +91,10 @@
         max-width: clamp(20rem, 70rem, 92vw);
         border-radius: 1rem;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        transform: translateY(-10%);
+        /*transform: translateY(-10%);*/
       }
 
-      .textbox > p:last-child {
+      .textbox>p:last-child {
         margin-bottom: 0.2rem;
       }
 
@@ -104,9 +122,9 @@
           padding: 1rem;
         }
 
-        * {
+        /** {
           font-size: 1rem;
-        }
+        }*/
       }
 
       @media (max-height: 400px) {
@@ -129,7 +147,7 @@
           flex-direction: column;
           justify-content: center;
           padding: 2rem;
-          background: linear-gradient(152deg,rgba(245, 239, 186, 1) 0%, rgba(255, 255, 255, 1) 23%);
+          background: linear-gradient(152deg, rgba(245, 239, 186, 1) 0%, rgba(255, 255, 255, 1) 23%);
         }
 
         br {
@@ -141,6 +159,72 @@
         }
       }
     </style>
+
+    <style>
+      .font-1 {
+        font-family: 'Lora', sans-serif;
+        font-style: italic;
+        font-size: 1.05rem;
+      }
+
+      .font-2 {
+        font-family: 'Ysabeau Office', sans-serif;
+        font-size: 1.2rem;
+      }
+
+      .font-3 {
+        font-family: 'Montagu Slab', sans-serif;
+        font-size: 1rem;
+        font-weight: 355;
+      }
+
+      .font-4 {
+        font-family: 'Satisfy', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      .font-5 {
+        font-family: 'Birthstone', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+
+      .font-6 {
+        font-family: 'Hurricane', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+
+      .font-7 {
+        font-family: 'Niconne', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+
+      .scroller {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        overflow: auto;
+      }
+
+      .content .tag {
+        background-color: #ddc500;
+        padding: 5px 10px;
+        width: max-content;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0 0 14px;
+        font-weight: bold;
+      }
+
+      .textbox {
+        position: relative;
+        overflow: hidden;
+      }
+    </style>
   </head>
 
   <body>
@@ -150,21 +234,127 @@
     <svg viewBox="0 0 500 100" preserveAspectRatio="none" id="wave" aria-hidden="true">
       <path fill="#f5efba" d="M0,30 C150,80 350,-10 500,30 L500,00 L0,0 Z" />
     </svg>
-    <main class="content">
-      <section class="textbox">
-        <h2>Välkommen till Ostronsällskapet</h2>
-        <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
 
-        <h3>Så här gör du</h3>
-        <ul>
-          <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
+    <div class="scroller">
+      <main class="content font-1">
+        <section class="textbox">
+          <div class="tag">1</div>
+          <h2>Välkommen till Ostronsällskapet</h2>
+          <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
+
+          <h3>Så här gör du</h3>
+          <ul>
+            <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
               meddelande (ersätt <strong>@</strong> med <strong>-</strong>).</li>
-          <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
+            <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
               meddelande.</li>
-        </ul>
+          </ul>
 
-        <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
-    </main>
+          <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
+      </main>
+
+      <main class="content font-2">
+        <section class="textbox">
+          <div class="tag">2</div>
+          <h2>Välkommen till Ostronsällskapet</h2>
+          <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
+
+          <h3>Så här gör du</h3>
+          <ul>
+            <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
+              meddelande (ersätt <strong>@</strong> med <strong>-</strong>).</li>
+            <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
+              meddelande.</li>
+          </ul>
+
+          <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
+      </main>
+
+      <main class="content font-3">
+        <section class="textbox">
+          <div class="tag">3</div>
+          <h2>Välkommen till Ostronsällskapet</h2>
+          <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
+
+          <h3>Så här gör du</h3>
+          <ul>
+            <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
+              meddelande (ersätt <strong>@</strong> med <strong>-</strong>).</li>
+            <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
+              meddelande.</li>
+          </ul>
+
+          <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
+      </main>
+
+      <main class="content font-4">
+        <section class="textbox">
+          <div class="tag">4</div>
+          <h2>Välkommen till Ostronsällskapet</h2>
+          <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
+
+          <h3>Så här gör du</h3>
+          <ul>
+            <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
+              meddelande (ersätt <strong>@</strong> med <strong>-</strong>).</li>
+            <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
+              meddelande.</li>
+          </ul>
+
+          <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
+      </main>
+
+      <main class="content font-5">
+        <section class="textbox">
+          <div class="tag">5</div>
+          <h2>Välkommen till Ostronsällskapet</h2>
+          <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
+
+          <h3>Så här gör du</h3>
+          <ul>
+            <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
+              meddelande (ersätt <strong>@</strong> med <strong>-</strong>).</li>
+            <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
+              meddelande.</li>
+          </ul>
+
+          <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
+      </main>
+
+      <main class="content font-6">
+        <section class="textbox">
+          <div class="tag">6</div>
+          <h2>Välkommen till Ostronsällskapet</h2>
+          <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
+
+          <h3>Så här gör du</h3>
+          <ul>
+            <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
+              meddelande (ersätt <strong>@</strong> med <strong>-</strong>).</li>
+            <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
+              meddelande.</li>
+          </ul>
+
+          <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
+      </main>
+
+      <main class="content font-7">
+        <section class="textbox">
+          <div class="tag">7</div>
+          <h2>Välkommen till Ostronsällskapet</h2>
+          <p>För att få information om nästa kväll och hur du kan delta behöver du ett årsmedlemskap.</p>
+
+          <h3>Så här gör du</h3>
+          <ul>
+            <li>Betala 10 kr till bankgiro <strong>238-0442</strong>. Ange din e-postadress som
+              meddelande (ersätt <strong>@</strong> med <strong>-</strong>).</li>
+            <li>Alternativt: Swisha 10 kr till <strong>0736213037</strong> och skriv din e-postadress som
+              meddelande.</li>
+          </ul>
+
+          <p>Du får ett medlemsnummer och ett kvitto skickat till din e-post.</p>
+      </main>
+    </div>
   </body>
 
 </html>
